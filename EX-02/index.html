@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" id="style">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicio2</title>
 </head>
 <body>
-    <ul id="nav">
-        <li><a href="http://www.google.com/">Home</a></li>
-        <li><a href="http://www.google.com/">Explore</a></li>
-        <li><a href="http://www.google.com/">Notifications</a></li>
-        <li><a href="http://www.google.com/">BookMarks</a></li>
-        <li><a href="http://www.google.com/">Lists</a></li>
-        <li><a href="http://www.google.com/">Profile</a></li>
-    </ul>
+    <div id="layout">
+        <div id="menu">
+            <ul class="sem_ponto menu">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> Explore </a></li>
+                <li><a href="#"> Notifications </a></li>
+                <li><a href="#"> Messages </a></li>
+                <li><a href="#"> Profile </a></li>
+                <li><a href="#"> More </a></li>
+            </ul>
+        </div>
 
+        <div id="perfil">
+            <img src="Murakami.ico" alt="Murakami_Shiina" width="64" height="64">
+            <button>Edit Profile</button>
+            <p>
+                <h3>Murakami Shiina</h3>
+                <h5><audio src="#">@MuKa_MiSS</audio></h5>
+                <p id="status" >Occupations: Koukousei 高校生 Programmer プログラマー</p>
+            </p>
 
-    <img src="Murakami_Shiina_Holding_Computer_C_Programming_Language (1).ico" alt="Murakami_Shiina" width="64" height="64">
-    <h3>Murakami Shiina</h3>
-    <h5><a href="@MuKa_MiSS">@MuKa_MiSS</a></h5>
-    Occupations: Koukousei 高校生 Programmer プログラマー<br>
-    <button>Edit Profile</button>
-    
-    <ul id="date">
-        <li><a href="http://www.google.com/">Quixadá - CE</a></li>
-        <li><a href="http://www.google.com/">Joined August</a></li>
-    </ul>
-    
-    <ul>
-        <li> <p><span>1003</span> <a href="http://www.google.com/">fallowing</a> <span>2027</span> <a href="http://www.google.com/">fallowers</a></p></li>
-        
-    </ul>
+            <ul class="sem_ponto referencias">
+                <li>Quixadá</li>
+                <li>Joined August 2021</li>
+            </ul>
 
-    <p id="nav"> 
-        <img src="Murakami_Shiina_Holding_Computer_C_Programming_Language (1).ico"       alt="Murakami_Shiina" width="64" height="64">
-        <a href="">Tzeets</a>
-        <a href="">Tzeets & replis</a>
-        <a href="">Media</a>
-        <a href="">Links</a>
-        <h6>Murakami_Shiina @MuKa_MiSS <span> Aug 24, 2022 </span></h6>
-        
+            <ul class="sem_ponto referencias">
+                <li><span> 1003 </span> fallowing </li>
+                <li><span> 2027 </span> fallowers </li>
+            </ul>
+        </div>
 
-        <h3>
-            <p>Lorem ipsum dolor sit amet. Sit minus totam et sequi eaque rem voluptatem animi est asperiores repellendus et dolor consequatur?</p>
-        </h3>
-        
-        <h4>
-            <a href="Reply">Reply</a>
-            <a href="Retzeet">Retzeet</a>
-            <a href="Like">Like</a>
-            <a href="Share">Share</a>
-        </h4>
-    </p>
+        <div id="postar">
+            <ul class="sem_ponto postar">
+                <li><a href="#"> Tzeets </a></li>
+                <li><a href="#"> Tzeeys & replis </a></li>
+                <li><a href="#"> Medias </a></li>
+                <li><a href="#"> Links </a></li>
+            </ul>
 
+            <div id="tzeet">
+                <p id="postagem_perfil"> Indiana Jones <span> @indianaJonas73 Aug 11, 2021</span></p>
+                <p id="postagem">Lorem ipsum dolor sit amet. Sit minus totam et sequi eaque rem voluptatem animi est asperiores repellendus et dolor consequatur?</p>
+            </div>
 
+            <ul class="sem_ponto interagir">
+                <li><a href="#"> Reply </a></li>
+                <li><a href="#"> Retzeet </a></li>
+                <li><a href="#"> Like </a></li>
+                <li><a href="#"> Share </a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

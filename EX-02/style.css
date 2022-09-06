@@ -1,70 +1,129 @@
 body{
-    background-color: white;
+    padding: 0%;
     color: rgb(15, 20, 25);
+    background-color: white;
 }
 
-a{
-    text-decoration:none;
-    color: inherit;
+.sem_ponto{/*tira os pntos das listas*/
+    list-style-type: none;
 }
 
-#nav a:hover{
-    text-decoration:none;
-    background-color: rgba(15, 25, 20, 0.1); 
-    transition: 0.5s;
-    opacity: 0.7;
-    border-radius: 10px/20px;
+#layout{/*Grid do Exercicio 2*/
+    display: grid;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+    height: 60%;
 }
 
-ul > p{
+#menu{/*grid do menu*/
+    grid-row: 1;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.menu{/*lista não ordenada do menu*/
+    margin-left: -30px;
+    line-height: 45px;
+    width: 100%;
+    color: blue;
+}
+
+.menu li:hover{/*Modificando linhas da lista*/
+    background-color: rgba(19, 33, 182, 0.1);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.menu a{/*links da pagina*/
+    color: rgb(15, 20, 25);
+    font-weight: bolt;
+    text-decoration: none;
+}
+
+#perfil{/*grid do perfil*/
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 0px;
+    margin-top: -20px;
+    width: 100%;
+    flex-direction: row;
+}
+
+#perfil img{/*tamanho da imagem*/
+    padding-top: 20px;
+    height: 70px;
+    width: 70px;
+}
+
+#status{/*informações do perfil*/
+    color: rgb(15, 20, 25);
+    font-size: 20px;
+}
+
+.referencias{/*lista não ordnada do perfil*/
     color: rgb(83, 100, 113);
 }
 
-p > span{
-  color: rgb(15, 20, 25);  
-  font-weight: bold;
+.referencias li{/*itens da lista*/
+    color: rgb(83, 100, 113);
+    display: inline-flex;
 }
 
-a:hover{
-    text-decoration: underline;
+li > span{
+    color:black;
+    font-weight: bold;
 }
 
-h4 > a{
-    color:rgb(83, 100, 113) ;
+#postar {
+    grid-row: 3;
 }
 
-a[href="Reply"]:hover{
-    text-decoration:none;
-    background:rgba(29, 155, 240, 0.1);
-    color:rgba(29, 155, 240, 1);
+.postar li{
+    display: inline-flex;
 }
 
-a[href="Retzeet"]:hover{
-    text-decoration:none;
-    background:rgba(0, 186, 124, 0.1);
-    color:rgba(0, 186, 124, 1);
+.postar li:hover{
+    background-color: rgba(15, 25, 20, 0.1);
 }
 
-a[href="Like"]:hover{
-    text-decoration:none;
-    background:rgba(249, 24, 128, 0.1);
-    color:rgba(249, 24, 128, 1);
+.postar a{
+    color: rgb(83, 100, 113);
+    text-decoration: none;
 }
 
-a[href="Share"]:hover{
-    text-decoration:none;
-    background:rgba(29, 155, 240, 0.1);
-    color:rgba(29, 155, 240, 1);
+#tzeet:hover{
+    background-color: rgba(249, 24, 128, 0.1);
 }
 
-a[href="@MuKa_MiSS"]{
+#postagem{
+    color: rgb(15, 20, 25);
+    margin-left: 45px;
+    margin-top: -10px;
+}
+
+#postagem_perfil{
+    color: rgb(15, 20, 25);
+    margin-top: -13px;
+    margin-left: 45px;
+}
+
+#postagem_perfil > span{
+    font-weight: bold;
     color:rgb(83, 100, 113);
 }
 
-#date{
-    color: rgb(83, 100, 113);
+.interagir li{
+    display: inline-flex;
 }
 
-h6 > span{
-    color:rgb(83, 100, 113) ;
+.interagir li:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+}
+
+.interagir a{
+    color: rgb(83, 100, 113);
+    text-decoration: none;
 }
