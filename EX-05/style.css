@@ -1,0 +1,54 @@
+body{ 
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(90deg, cyan, yellow);
+}
+
+.container{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.card {
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    padding: 50px;
+
+    border-radius: 15px;
+
+    width: 400px;
+
+}
+
+.header{
+    text-align: center;
+}
+
+.white h4, h5, h6{
+    color: aliceblue;
+}
+
+.white small{
+    color: rgb(145, 145, 145);
+}
+
+#white{
+    color: aliceblue;
+}
+.card img{
+
+    height: 30px;
+
+    width: 30px;
+    
+}

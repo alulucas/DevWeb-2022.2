@@ -11,7 +11,8 @@
 
         <!-- Bootstrap css -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+        <script src="script.js"></script>
+        
         <!-- metas requeridos -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +28,7 @@
                         <li><a href="#"> <img src="logos/veia.svg"> Explore </a></li>
                         <li><a href="#"> <img src="logos/sinos.svg"> Notifications </a></li>
                         <li><a href="#"> <img src="logos/cartas.svg"> Messages </a></li>
-                        <li><a href="#"> <img src="logos/perfil-logo.svg"> Profile </a></li>
+                        <li><a href="profile.html"> <img src="logos/perfil-logo.svg"> Profile </a></li>
                         <li><a href="#"> <img src="logos/more.svg"> More </a></li>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                             <a  role="button" class="btn btn-primary me-md-2" href="#"> What If...? </a>
@@ -36,55 +37,62 @@
                 </div>
 
                 <div class="col-xs-11 col-sm-9 col-md-10 col-lg-7 border"> <!-- formato das colunas -->
-                    <div id="info_perfil">
-                        <img src="logos/Murakami.ico">
+                  <div class="row">
 
+                    <div class="d-flex flex-row mb-2" >
+                      <div class="p-2" >
+                        <h1>Home</h1>
+                        <img src="logos/Murakami.ico" alt="foto de perfil" width="65" height="65">
+                      </div>
+
+                      <div class="p-2 links">
+                        <form action="submit">
+                          <textarea name="text" id="texto" cols="50" rows="3" contenteditable="true"></textarea>
+                        </form>
+                        <h6><a href="http://" ><img src="logos/cartas.svg" alt="reply"> Everyone can reply</a></h6>
                         <div>
-                            <button id="botao" class="btn btn-primary btn-profile" type="button" >Edit Profile</button>
+                          <a href=""><img src="logos\carde.svg" alt=""></a>
+                          <a href=""><img src="logos\file.svg" alt=""></a>
+                          <a href=""><img src="logos\smile.svg" alt=""></a>
+                          <a href=""><img src="logos\chart.svg" alt=""></a>
+                          <a href=""><img src="logos\event.svg" alt=""></a>
+                          <a href=""><img src="logos\geo.svg" alt=""></a>
                         </div>
 
-                        <p>
-                            <h3>Murakami Shiina</h3>
-                            <h5><audio src="#">@MuKa_MiSS</audio></h5>
-                            <p id="status">Occupations: Koukousei 高校生 Programmer プログラマー</p>
-                        </p>
-            
-                        <ul class="sem_ponto referencias">
-                            <li>Quixadá</li>
-                            <li>Joined August 2021</li>
-                        </ul>
-            
-                        <ul class="sem_ponto referencias">
-                            <li><span> 1003 </span> fallowing </li>
-                            <li><span> 2027 </span> fallowers </li>
-                        </ul>
+                        <div class="d-flex flex-row-reverse">
+                          <button id="" class="btn btn-primary me-md-2 btn-envio" disabled> Enviar </button>
+                          <span>|</span>
+                          <a href="#"> <img src="logos/circle.svg"> </a>
+                        </div>
 
-                        <ul class="sem_ponto referencias interagir">
-                            <li><a href="#"> Tzeets </a></li>
-                            <li><a href="#"> Tzeeys & replis </a></li>
-                            <li><a href="#"> Medias </a></li>
-                            <li><a href="#"> Links </a></li>
-                        </ul>
+                      </div>
+
+                      
+
+                        
+                    </div>
+
+
+
+
                     </div>
             
-                    <div class="row">
-              
-                        <div class="col-12 border">
-                            <div class="postar">
-                                <div>
-                                    <p> Indiana Jones <span> @indianaJonas73 Aug 11, 2021</span></p>
-                                    <p>Lorem ipsum dolor sit amet. Sit minus totam et sequi eaque rem voluptatem animi est asperiores repellendus et dolor consequatur?</p>
-                                </div>
-                    
-                                <ul class="sem_ponto referencias interagir">
-                                    <li><a href="#"> <img src="logos/chat.svg"> Reply </a></li>
-                                    <li><a href="#"> <img src="logos/arrow-repeat.svg"> Retzeet </a></li>
-                                    <li><a href="#"> <img src="logos/heart.svg"> Like </a></li>
-                                    <li><a href="#"> <img src="logos/upload.svg"> Share </a></li>
-                                </ul>
+                    <div class="col-12 border">
+                        <div class="postar">
+                            <div>
+                                <p> Indiana Jones <span> @indianaJonas73 Aug 11, 2021</span></p>
+                                <p>Lorem ipsum dolor sit amet. Sit minus totam et sequi eaque rem voluptatem animi est asperiores repellendus et dolor consequatur?</p>
                             </div>
+                
+                            <ul class="sem_ponto referencias interagir">
+                                <li><a href="#"> <img src="logos/chat.svg"> Reply </a></li>
+                                <li><a href="#"> <img src="logos/arrow-repeat.svg"> Retzeet </a></li>
+                                <li><a href="#"> <img src="logos/heart.svg"> Like </a></li>
+                                <li><a href="#"> <img src="logos/upload.svg"> Share </a></li>
+                            </ul>
                         </div>
                     </div>
+                  </div>
                 </div>
 
                 <div class="d-none d-lg-block col-lg-3 ">
